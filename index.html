@@ -1,1 +1,79 @@
-<p style="color:red">Hello World</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Live Editor</title>
+  <meta name="description" content="A simple live editor with very few lines of code.">
+
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/plugins/line-numbers/prism-line-numbers.css">
+</head>
+<body>
+
+  <!-- Preview of the code -->
+  <iframe id="preview"></iframe>
+
+  <!-- Editor Boxes -->
+
+  <div id="footer">
+    <div class="editor tabs">
+        <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+        <label class="label" for="tab-1">HTML</label>
+        <div class="panel panel-html">
+          <a id="w3cButton" onclick="getCode()">W3CValidator</a>
+          <a id="" onclick="claat()">claat</a>
+
+          <textarea id="html" class="language-html">
+  <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Formulário</title>
+      <meta charset="utf-8">
+    </head>
+    <body>
+      <form action="" method="">
+        <input type="text" placeholder="Nome" name="nome">
+        <input type="email" placeholder="E-mail" name="email">
+        <input type="password" placeholder="Senha" name="senha">
+        <button type="submit">Enviar</button>
+      </form>
+    </body>
+    </html>
+          </textarea>
+        </div>
+      
+        <input class="input" name="tabs" type="radio" id="tab-2"/>
+        <label class="label" for="tab-2">CSS</label>
+        <div class="panel">
+          <textarea id="css" class="language-css"></textarea>
+        </div>
+
+        <input class="input" name="tabs" type="radio" id="tab-3"/>
+        <label class="label" for="tab-3">JavaScript</label>
+        <div class="panel">
+          <textarea id="js" class="language-js"></textarea>
+        </div>
+        
+        <input class="input" name="tabs" type="radio" id="tab-4"/>
+        <label class="label" for="tab-4">Markdown</label>
+        <div class="panel">
+          <textarea id="markdown" class="language-js"></textarea>
+        </div>
+    </div>
+    <div id="console">
+        <h1>Informações</h1>
+        <div id="msg-console"></div>
+    </div>
+</div>
+
+  <script src="js/prism.js"></script>
+  <script src="js/prism-highlight.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/plugins/line-numbers/prism-line-numbers.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
