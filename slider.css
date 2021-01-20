@@ -1,0 +1,26 @@
+.slides {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+#slide1 { background-color: #1abc9c; }
+#slide2 { background-color: #3498db; }
+#slide3 { background-color: #9b59b6; }
+#slide4 { background-color: #e67e22; }
+#slide5 { background-color: #e74c3c; }
+#slide6 { background-color: #2ecc71; }
